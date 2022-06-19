@@ -1,0 +1,18 @@
+{
+  "name": "zwave-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.3.7",
+    "pg": "^8.7.3",
+    "posix-mq": "^1.1.4",
+    "zwave-js": "^9.3.0"
+  }
+}

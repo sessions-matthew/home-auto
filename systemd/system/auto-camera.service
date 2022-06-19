@@ -1,0 +1,14 @@
+[Unit]
+Description=Auto Camera Service
+After=mosquitto.service
+Requires=mosquitto.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=user
+ExecStart=/home/user/Documents/System/Auto/camera.py
+
+[Install]
+WantedBy=multi-user.target

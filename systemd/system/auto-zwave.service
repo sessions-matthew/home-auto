@@ -1,0 +1,14 @@
+[Unit]
+Description=ZWave-js to MQTT service
+After=mosquitto.service
+Requires=mosquitto.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=user
+ExecStart=/usr/bin/node /home/user/Documents/System/Auto/zwave-js/index.js
+
+[Install]
+WantedBy=multi-user.target

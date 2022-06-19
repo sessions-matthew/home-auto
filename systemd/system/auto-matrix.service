@@ -1,0 +1,14 @@
+[Unit]
+Description=Auto Matrix Service
+After=mosquitto.service
+Requires=mosquitto.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=user
+ExecStart=/home/user/Documents/System/Auto/matrix.py
+
+[Install]
+WantedBy=multi-user.target

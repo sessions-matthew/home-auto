@@ -1,0 +1,14 @@
+[Unit]
+Description=Auto Hue Service
+After=mosquitto.service bluetooth.service auto-home.service
+Requires=mosquitto.service bluetooth.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=user
+ExecStart=/home/user/Documents/System/Auto/hue.py
+
+[Install]
+WantedBy=multi-user.target

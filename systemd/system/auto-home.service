@@ -1,0 +1,15 @@
+[Unit]
+Description=Auto Home Service
+After=mosquitto.service auto-matrix.service auto-camera.service
+Requires=mosquitto.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=user
+ExecStart=/home/user/Documents/System/Auto/home.py
+
+[Install]
+WantedBy=multi-user.target
+
