@@ -33,7 +33,7 @@ def connect_mqtt():
     client.connect(broker, port)
     return client
 
-# 1. Factory reset the bulb
+# 1. Factory reset the bulb (on for 8 off for 2 until it blinks)
 # 2. Pair the bulb from bluetoothctl
 # 3. Add device to this list
 devices = {
